@@ -1,2 +1,5 @@
 # YYYY-Term-Faculty-Title
-This respository is a template for each new project. Please put all text in lowercase and include term (W2, S, W1). Add repository to labgroups team. Any work should be put into a timesheet on the "Projects" page of the UBC-GSRC organization page.
+# 2026-W2-Hassan-load_cell_sediment_trap
+
+This repository will hold the firmware to collect data on a field deployable sediment trap equipped with load cells. The idea is to get a weight reading every 15 minutes for the rainy season in Malcom Knapp Research Forest.
+
