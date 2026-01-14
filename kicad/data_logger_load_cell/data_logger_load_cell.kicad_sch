@@ -3084,16 +3084,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 130.81) (xy 115.57 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22184bd3-03c9-479c-9e5e-0fc3d93bd371")
-	)
-	(wire
-		(pts
 			(xy 147.32 78.74) (xy 148.59 78.74)
 		)
 		(stroke
@@ -3131,6 +3121,16 @@
 			(type default)
 		)
 		(uuid "6832fbe5-709a-44e6-8118-9b00f3619a5b")
+	)
+	(wire
+		(pts
+			(xy 124.46 130.81) (xy 115.57 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7244185a-b6aa-4d57-b218-0088b06a826b")
 	)
 	(wire
 		(pts
@@ -3292,7 +3292,7 @@
 		)
 		(uuid "f922aafe-a52a-4910-94ac-ff8b3e0da1cc")
 	)
-	(label "pin_13"
+	(label "pin_3"
 		(at 124.46 133.35 0)
 		(effects
 			(font
@@ -3302,7 +3302,7 @@
 		)
 		(uuid "42c7ec62-33d4-48e9-8726-99625ae8efc9")
 	)
-	(label "pin_3"
+	(label "pin_14"
 		(at 123.19 95.25 0)
 		(effects
 			(font
@@ -3322,7 +3322,7 @@
 		)
 		(uuid "5f736681-059e-4524-83cf-cd00728d391d")
 	)
-	(label "pin_4"
+	(label "pin_33"
 		(at 124.46 130.81 0)
 		(effects
 			(font
@@ -3352,7 +3352,7 @@
 		)
 		(uuid "9231a563-ed44-4da1-a07a-b83b4f1b65d2")
 	)
-	(label "pin_15"
+	(label "pin_4"
 		(at 124.46 66.04 0)
 		(effects
 			(font
@@ -3362,7 +3362,7 @@
 		)
 		(uuid "9699aa72-1909-4a1c-b634-9014588cde9e")
 	)
-	(label "pin_2"
+	(label "pin_15"
 		(at 124.46 63.5 0)
 		(effects
 			(font
@@ -3402,17 +3402,7 @@
 		)
 		(uuid "bd32e864-eae6-421b-9703-740e72936abb")
 	)
-	(label "pin_4"
-		(at 124.46 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d8a60cf0-7936-46e6-a025-3e469880568b")
-	)
-	(label "pin_14"
+	(label "pin_2"
 		(at 123.19 97.79 0)
 		(effects
 			(font
