@@ -16,9 +16,10 @@ HX711 scale2;
 HX711 scale3;
 
 // Calibration factors
-float factor1 = 0;
-float factor2 = 0;
-float factor3 = 0;
+float factor1 = -42437.94;
+float factor2 = -42065.61;
+// float factor2 = -42336.10;
+float factor3 = -42336.10;
 
 // Forward declaration
 void calibrateInteractiveScale(HX711 &scale, int scaleNum);
@@ -61,6 +62,7 @@ void loop() {
 
   // All scales calibrated
   Serial.println("\nAll scales calibrated!");
+
   Serial.print("Scale 1 factor: "); Serial.println(factor1);
   Serial.print("Scale 2 factor: "); Serial.println(factor2);
   Serial.print("Scale 3 factor: "); Serial.println(factor3);
@@ -72,9 +74,17 @@ void loop() {
 
   Serial.println("\nLive readings every second:");
   while (1) {
-    if (scale1.wait_ready_timeout(1000)) { Serial.print("S1: "); Serial.print(scale1.get_units(10)); Serial.print(" kg, "); }
-    if (scale2.wait_ready_timeout(1000)) { Serial.print("S2: "); Serial.print(scale2.get_units(10)); Serial.print(" kg, "); }
-    if (scale3.wait_ready_timeout(1000)) { Serial.print("S3: "); Serial.println(scale3.get_units(10)); }
+    float weight1 = scale1.get_units(10);
+    float weight2 = scale2.get_units(10);  
+    float weight3 = scale3.get_units(10);
+
+    if (scale1.wait_ready_timeout(1000)) { Serial.print("S1: "); Serial.print(weight1); Serial.print(" kg, "); }
+    if (scale2.wait_ready_timeout(1000)) { Serial.print("S2: "); Serial.print(weight2); Serial.print(" kg, "); }
+    if (scale3.wait_ready_timeout(1000)) { Serial.print("S3: "); Serial.println(weight3); }
+
+    Serial.println("------------------------------");
+    Serial.print("Total Weight: ");
+    Serial.println(weight1 + weight2 + weight3);
     delay(1000);
   }
 }

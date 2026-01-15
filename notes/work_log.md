@@ -8,9 +8,19 @@
 
 - If anything important occurs, note it in the 'Project Updates' in a more concise way than you would in this log.  
 
-- Do not delete entries, this is meant to serve as a rudimentary version control and archive.  
+- Do not delete entries, this is meant to serve as a rudimentary version control and archive.
 
 - Leave the Procedure at the top of the page.  
+
+## 2026-01-15
+
+Figured out a lot today. I first started with trying to test everything in the water. I quickly realized the conversion factor to convert the load cell readings to kg varies from being in the air and underwater. That was intuitive but I wish it wasn't the case. I was able to calibrate each of the load cells underwater using a 1/2" threaded rod with like 50 washers around it which ended up being about 3.55 kg. I used this on each of the load cells individually to get a conversion factor for each one. When I then put in the sediment trap, tared it, and put in the test weight, the three load cells summed to be 3.55 no matter where I put the test weight. 
+
+From there, I tried using the blue gravel by the Toy Flume. I put in ~11kg of gravel and the cells read 8 kg. This is because a straight conversion factor does not account for the buoyancy of the material inside it. Now this is where the accuracy gets more complicated. If there's a variety of rocks coming into the trap, it's possible that they all have different densities. So no matter what there's going to be some model fitting going on here.
+
+There will be some good data to fit to though. Because we will start with reading zero kg. Then it will accumulate and show the waves of sediment that get caught every 30 seconds or so. After a few weeks, Sol will take all of the sediment out of the trap and weigh it. He'll also do a grain size distribution of the sample. It would be great to also do get an average density or a density distribution. He also has water temperature readings which is necessary. These data will be enough to get almost instantaneous sediment transport readings. 
+
+Marwan is happy with just a proportional calibration to the start and end mass of the trap.
 
 ## 2026-01-14
 
